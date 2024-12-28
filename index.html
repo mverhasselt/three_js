@@ -4,14 +4,37 @@
             Three JS learning
         </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
         <meta name="theme-color" content="#000000">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-mobile-web-app-title" content="PWA1">
         <link rel="manifest" href="/three_js/manifest.json">
         <link rel="apple-touch-icon" href="/three_js/icons/icon192.png">
-      <script type="module" crossorigin src="/three_js/assets/index-BB0ITdR6.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                height: 100dvh; /* dynamic viewport height */
+                overflow: hidden;
+                position: fixed;
+                touch-action: none;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                user-select: none;
+                overscroll-behavior: none;
+                /* Support for iPhone X notch area */
+                padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+            }
+            canvas {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+      <script type="module" crossorigin src="/three_js/assets/index-BQQ1o-ve.js"></script>
     <link rel="manifest" href="/three_js/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/three_js/registerSW.js"></script></head>
     <body>
         
