@@ -4,7 +4,7 @@
             Three JS learning
         </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui" />
         <meta name="theme-color" content="#000000">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,7 +17,7 @@
                 padding: 0;
                 width: 100vw;
                 height: 100vh;
-                height: 100dvh; /* dynamic viewport height */
+                height: 100dvh;
                 overflow: hidden;
                 position: fixed;
                 touch-action: none;
@@ -25,16 +25,19 @@
                 -webkit-user-select: none;
                 user-select: none;
                 overscroll-behavior: none;
-                /* Support for iPhone X notch area */
-                padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+                background-color: #000000;
             }
             canvas {
-                display: block;
-                width: 100%;
-                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
             }
         </style>
-      <script type="module" crossorigin src="/three_js/assets/index-BQQ1o-ve.js"></script>
+      <script type="module" crossorigin src="/three_js/assets/index-CSaNfajK.js"></script>
     <link rel="manifest" href="/three_js/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/three_js/registerSW.js"></script></head>
     <body>
         
